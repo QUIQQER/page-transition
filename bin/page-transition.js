@@ -18,13 +18,28 @@
                     return;
                 }
 
-                Container = Container[0];
-                Container.style.zIndex = -1;
-                Container.style.opacity = 0;
+                Container[0].style.zIndex = -1;
+                Container[0].style.opacity = 0;
             });
 
             return;
         }
+
+        addEvent(window, 'beforeunload', function () {
+            var Container = document.getElementsByClassName('quiqqer-page-transition');
+
+            if (!Container || !Container.length) {
+                return;
+            }
+
+            Container[0].style.zIndex = 1999;
+
+            moofx(Container).animate({
+                opacity: 1
+            }, {
+                duration: 200
+            });
+        });
 
         // show page
         Pace.on('done', function () {
