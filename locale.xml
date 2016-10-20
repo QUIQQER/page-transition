@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <groups name="quiqqer/page-transition" datatype="php,js">
+        <locale name="settings.title">
+            <de><![CDATA[Seitenwechsel (Frontend)]]></de>
+            <en><![CDATA[Site transition (Frontend)]]></en>
+        </locale>
+        <locale name="settings.pagetransition.title">
+            <de><![CDATA[Seitenwechsel]]></de>
+            <en><![CDATA[Site transition]]></en>
+        </locale>
+        <locale name="settings.pagetransition.type">
+            <de><![CDATA[Art des Seitenwechsels]]></de>
+            <en><![CDATA[Site transition type]]></en>
+        </locale>
+
+        <locale name="transition.no">
+            <de><![CDATA[Kein Effekt]]></de>
+            <en><![CDATA[No effect]]></en>
+        </locale>
+        <locale name="transition.opacity">
+            <de><![CDATA[Langsam durchsichtig werden]]></de>
+            <en><![CDATA[Smooth opacity]]></en>
+        </locale>
+        <locale name="transition.nature">
+            <de><![CDATA[Effekt: Nature]]></de>
+            <en><![CDATA[Effect: Nature]]></en>
+        </locale>
+        <locale name="transition.nature2">
+            <de><![CDATA[Effekt: Nature 2]]></de>
+            <en><![CDATA[Effect: Nature 2]]></en>
+        </locale>
+        <locale name="transition.line">
+            <de><![CDATA[Effekt: Line]]></de>
+            <en><![CDATA[Effect: Line]]></en>
+        </locale>
+        <locale name="transition.line2">
+            <de><![CDATA[Effekt: Line 2]]></de>
+            <en><![CDATA[Effect: Line 2]]></en>
+        </locale>
+        <locale name="transition.urban">
+            <de><![CDATA[Effekt: Urban]]></de>
+            <en><![CDATA[Effect: Urban]]></en>
+        </locale>
+        <locale name="transition.urban2">
+            <de><![CDATA[Effekt: Urban 2]]></de>
+            <en><![CDATA[Effect: Urban 2]]></en>
+        </locale>
+    </groups>
+</locales>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiqqer>
+    <project>
+
+        <settings>
+            <config>
+                <section name="quiqqer.pagetransition">
+                    <conf name="type">
+                        <type><![CDATA[string]]></type>
+                    </conf>
+                </section>
+            </config>
+
+            <window>
+                <categories>
+                    <category name="setting">
+                        <text>
+                            <locale group="quiqqer/page-transition" var="settings.title"/>
+                        </text>
+
+                        <settings title="quiqqer/page-transition" name="settings.pagetransition">
+                            <title>
+                                <locale group="quiqqer/page-transition"
+                                        var="settings.pagetransition.title"/>
+                            </title>
+                            <select conf="quiqqer.pagetransition.type">
+                                <text>
+                                    <locale group="quiqqer/page-transition"
+                                            var="settings.pagetransition.type"/>
+                                </text>
+                                <option value="">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.no"/>
+                                </option>
+                                <option value="opacity">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.opacity"/>
+                                </option>
+                                <option value="nature">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.nature"/>
+                                </option>
+                                <option value="nature2">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.nature2"/>
+                                </option>
+                                <option value="line">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.line"/>
+                                </option>
+                                <option value="line2">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.line2"/>
+                                </option>
+                                <option value="urban">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.urban"/>
+                                </option>
+                                <option value="urban2">
+                                    <locale group="quiqqer/page-transition"
+                                            var="transition.urban2"/>
+                                </option>
+                            </select>
+                        </settings>
+
+                    </category>
+                </categories>
+
+            </window>
+        </settings>
+
+    </project>
+</quiqqer>
