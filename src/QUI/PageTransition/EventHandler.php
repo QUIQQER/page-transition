@@ -14,8 +14,26 @@ use QUI;
  */
 class EventHandler
 {
+    /**
+     * @param QUI\Template $Template
+     */
     public static function onTemplateGetHeader(QUI\Template $Template)
     {
-echo 1;
+        $Template->extendHeaderWithCSSFile(dirname(__FILE__) . '/page-transition.css');
+    }
+
+    /**
+     * @param string $output
+     * @return mixed
+     */
+    public static function onRequestOutput($output)
+    {
+        $output = preg_replace(
+            '#<body([^>]*)>#i',
+            '<div class="quiqqer-page-transition"></div>',
+            $output
+        );
+
+        return $output;
     }
 }
