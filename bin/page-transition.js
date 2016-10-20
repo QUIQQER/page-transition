@@ -29,9 +29,9 @@ document.addEvent('domready', function () {
         });
     });
 
-    
-    window.onpopstate = function (event) {
-        event.stop();
-    };
-
+    //
+    // window.onpopstate = function (event) {
+    //     event.stop();
+    // };
+    //
 });
