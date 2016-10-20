@@ -17,48 +17,123 @@
     opacity: 0.5;
 }
 
-.quiqqer-page-transition.hide {
-    -webkit-mask: url('img/nature-sprite.png');
-    mask: url('img/nature-sprite.png');
-    -webkit-mask-size: 2300% 100%;
-    mask-size: 2300% 100%;
-    -webkit-animation: mask-play 1s steps(22) forwards;
+/**
+    effekt nature
+
+    http://tympanus.net/codrops/2016/09/29/transition-effect-with-css-masks/
+
+ ============================================================= */
+
+.quiqqer-page-transition.nature-hide {
     animation: mask-play 1s steps(22) forwards;
+    mask: url('img/nature-sprite.png');
+    mask-size: 2300% 100%;
+
+    -webkit-animation: mask-play 1s steps(22) forwards;
+    -webkit-mask: url('img/nature-sprite.png');
+    -webkit-mask-size: 2300% 100%;
+}
+
+/**
+    effekt nature 2
+
+ ============================================================= */
+
+.quiqqer-page-transition.nature2-hide {
+    animation: mask-play 1s steps(70) forwards;
+    mask: url('img/nature-sprite-2.png');
+    mask-size: 7100% 100%;
+
+    -webkit-animation: mask-play 1s steps(70) forwards;
+    -webkit-mask: url('img/nature-sprite-2.png');
+    -webkit-mask-size: 7100% 100%;
+}
+
+/**
+    effekt line
+
+ ============================================================= */
+
+.quiqqer-page-transition.line-hide {
+    animation: mask-play 1s steps(74) forwards;
+    mask: url('img/building-sprite.png');
+    mask-size: 7500% 100%;
+
+    -webkit-animation: mask-play 1s steps(74) forwards;
+    -webkit-mask: url('img/building-sprite.png');
+    -webkit-mask-size: 7500% 100%;
+}
+
+/**
+    effekt line 2
+
+ ============================================================= */
+
+.quiqqer-page-transition.line2-hide {
+    animation: mask-play 1s steps(83) forwards;
+    mask: url('img/building-sprite-2.png');
+    mask-size: 8400% 100%;
+
+    -webkit-animation: mask-play 1s steps(83) forwards;
+    -webkit-mask: url('img/building-sprite-2.png');
+    -webkit-mask-size: 8400% 100%;
+}
+
+/**
+   effekt urban
+
+ ============================================================= */
+
+.quiqqer-page-transition.urban-hide {
+    animation: mask-play 1s steps(29) forwards;
+    mask: url('img/urban-sprite.png');
+    mask-size: 3000% 100%;
+
+    -webkit-animation: mask-play 1s steps(29) forwards;
+    -webkit-mask: url('img/urban-sprite.png');
+    -webkit-mask-size: 3000% 100%;
+}
+
+/**
+    effekt urban2
+
+ ============================================================= */
+
+.quiqqer-page-transition.urban2-hide {
+    animation: mask-play 1s steps(73) forwards;
+    mask: url('img/urban-sprite-2.png');
+    mask-size: 7400% 100%;
+
+    -webkit-animation: mask-play 1s steps(73) forwards;
+    -webkit-mask: url('img/urban-sprite-2.png');
+    -webkit-mask-size: 7400% 100%;
 }
 
 @-webkit-keyframes mask-play {
     from {
-        -webkit-mask-position: 0 0;
         mask-position: 0 0;
+        -webkit-mask-position: 0 0;
     }
     to {
-        -webkit-mask-position: 100% 0;
         mask-position: 100% 0;
+        -webkit-mask-position: 100% 0;
     }
 }
 
 @keyframes mask-play {
     from {
-        -webkit-mask-position: 0 0;
         mask-position: 0 0;
+        -webkit-mask-position: 0 0;
     }
     to {
-        -webkit-mask-position: 100% 0;
         mask-position: 100% 0;
+        -webkit-mask-position: 100% 0;
     }
 }
 
-/*.quiqqer-page-transition .project:nth-child(odd).hide {*/
-/*-webkit-mask: url(../img/nature-sprite-2.png);*/
-/*mask: url(../img/nature-sprite-2.png);*/
-/*-webkit-mask-size: 7100% 100%;*/
-/*mask-size: 7100% 100%;*/
-/*-webkit-animation: mask-play 1.4s steps(70) forwards;*/
-/*animation: mask-play 1.4s steps(70) forwards;*/
-/*}*/
-
 /** loader animation
- ================================================ */
+ ============================================================= */
+
 .sk-circle {
     margin: 40px auto;
     width: 40px;

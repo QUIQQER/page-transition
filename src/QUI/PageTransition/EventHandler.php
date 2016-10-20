@@ -20,9 +20,16 @@ class EventHandler
     public static function onTemplateGetHeader(QUI\Template $Template)
     {
         $Template->extendHeaderWithCSSFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/page-transition.css');
-
         $Template->extendHeaderWithJavaScriptFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/page-transition.js');
-        $Template->extendHeaderWithJavaScriptFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/zepto.min.js');
+
+        $Project    = QUI::getRewrite()->getProject();
+        $transition = $Project->getConfig('quiqqer.pagetransition.type');
+
+        $header = '<script type="text/javascript">';
+        $header .= 'var QUIQQER_PAGE_TRANSITION = "' . htmlspecialchars($transition) . '";';
+        $header .= '</script>';
+
+        $Template->extendHeader($header);
     }
 
     /**
