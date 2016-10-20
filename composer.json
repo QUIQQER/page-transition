@@ -2,7 +2,7 @@
   "name": "quiqqer/page-transition",
   "type": "quiqqer-module",
   "description": "",
-  "version": "dev-dev",
+  "version": "dev-master",
   "authors": [
     {
       "name": "Henning Leutz",
