@@ -1,0 +1,29 @@
+{
+    "name" : "quiqqer/page-transition",
+    "type" : "quiqqer-module",
+    "description" : "",
+    "version" : "dev-master",
+    
+    "authors" : [{
+        "name": "Henning Leutz",
+        "email": "support@pcsg.de",
+        "homepage": "http://www.pcsg.de",
+        "role": "Developer"
+    }],
+
+    "support" : {
+        "email": "support@pcsg.de",
+        "url": "http://www.pcsg.de"
+    },
+
+    "require": {
+        "php" : ">=5.3",
+        "quiqqer/quiqqer" : "*@dev"
+    },
+
+    "autoload": {
+        "psr-4" : {
+            "QUI\\PageTransition\\" : "src\/PageTransition"
+        }
+    }
+}
