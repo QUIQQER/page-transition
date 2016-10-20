@@ -2,6 +2,7 @@
 Page Transitions
 ========
 
+Effekt bei jedem Seitenwechsel
 
 
 Paketname:
@@ -11,6 +12,8 @@ Paketname:
 
 Features (Funktionen)
 --------
+
+- Effekte beim Seitenwechsel
 
 
 Installation
@@ -22,8 +25,8 @@ Der Paketname ist: quiqqer/page-transition
 Mitwirken
 ----------
 
-- Issue Tracker: 
-- Source Code: 
+- Issue Tracker: https://dev.quiqqer.com/quiqqer/page-transition/issues
+- Source Code: https://dev.quiqqer.com/quiqqer/page-transition/tree/master 
 
 
 Support
@@ -36,6 +39,4 @@ senden Sie bitte eine E-Mail an support@pcsg.de.
 Lizenz
 -------
 
-
-Entwickler
---------
+MIT
