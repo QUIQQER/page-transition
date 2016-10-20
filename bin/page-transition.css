@@ -17,6 +17,48 @@
     opacity: 0.5;
 }
 
+.quiqqer-page-transition.hide {
+    -webkit-mask: url('img/nature-sprite.png');
+    mask: url('img/nature-sprite.png');
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    -webkit-animation: mask-play 1s steps(22) forwards;
+    animation: mask-play 1s steps(22) forwards;
+}
+
+@-webkit-keyframes mask-play {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes mask-play {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+/*.quiqqer-page-transition .project:nth-child(odd).hide {*/
+/*-webkit-mask: url(../img/nature-sprite-2.png);*/
+/*mask: url(../img/nature-sprite-2.png);*/
+/*-webkit-mask-size: 7100% 100%;*/
+/*mask-size: 7100% 100%;*/
+/*-webkit-animation: mask-play 1.4s steps(70) forwards;*/
+/*animation: mask-play 1.4s steps(70) forwards;*/
+/*}*/
+
+/** loader animation
+ ================================================ */
 .sk-circle {
     margin: 40px auto;
     width: 40px;
