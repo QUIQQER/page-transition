@@ -19,21 +19,19 @@ class EventHandler
      */
     public static function onTemplateGetHeader(QUI\Template $Template)
     {
-        $Template->extendHeaderWithCSSFile(dirname(__FILE__) . '/page-transition.css');
+        $Template->extendHeaderWithCSSFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/page-transition.css');
+        $Template->extendHeaderWithJavaScriptFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/page-transition.js');
     }
 
     /**
      * @param string $output
-     * @return mixed
      */
-    public static function onRequestOutput($output)
+    public static function onRequestOutput(&$output)
     {
         $output = preg_replace(
             '#<body([^>]*)>#i',
-            '<div class="quiqqer-page-transition"></div>',
+            '<body$1><div class="quiqqer-page-transition"></div>',
             $output
         );
-
-        return $output;
     }
 }
