@@ -37,7 +37,15 @@ class EventHandler
      */
     public static function onRequestOutput(&$output)
     {
-        $placer = '<div class="quiqqer-page-transition">
+        $placer = '
+            <noscript>
+                <style>
+                 .quiqqer-page-transition {
+                       display: none;
+                 }
+                </style>
+            </noscript>
+            <div class="quiqqer-page-transition">
             <div class="quiqqer-page-transition-loader">
                 <div class="sk-circle">
                     <div class="sk-circle1 sk-child"></div>
