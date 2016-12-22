@@ -66,7 +66,7 @@ class EventHandler
 
         $output = preg_replace(
             '#<body([^>]*)>#i',
-            '<body$1>' . $placer . '</div>',
+            '<body$1>' . $placer,
             $output
         );
     }
