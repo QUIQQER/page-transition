@@ -27,6 +27,10 @@
             <de><![CDATA[Kein Effekt]]></de>
             <en><![CDATA[No effect]]></en>
         </locale>
+        <locale name="deactivate">
+            <de><![CDATA[Deaktivieren]]></de>
+            <en><![CDATA[Deactivate]]></en>
+        </locale>
         <locale name="transition.opacity">
             <de><![CDATA[Langsam durchsichtig werden]]></de>
             <en><![CDATA[Smooth opacity]]></en>
