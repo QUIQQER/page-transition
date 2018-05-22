@@ -3,6 +3,7 @@
 /**
  * This file contains QUI\PageTransition\EventHandler
  */
+
 namespace QUI\PageTransition;
 
 use QUI;
@@ -19,14 +20,19 @@ class EventHandler
      */
     public static function onTemplateGetHeader(QUI\Template $Template)
     {
-        $Template->extendHeaderWithCSSFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/page-transition.css');
-        $Template->extendHeaderWithJavaScriptFile(URL_OPT_DIR . 'quiqqer/page-transition/bin/page-transition.js');
-
         $Project    = QUI::getRewrite()->getProject();
         $transition = $Project->getConfig('quiqqer.pagetransition.type');
 
+        if ($transition == 0) {
+            return;
+        }
+
+        $Template->extendHeaderWithCSSFile(URL_OPT_DIR.'quiqqer/page-transition/bin/page-transition.css');
+        $Template->extendHeaderWithJavaScriptFile(URL_OPT_DIR.'quiqqer/page-transition/bin/page-transition.js');
+
+
         $header = '<script type="text/javascript">';
-        $header .= 'var QUIQQER_PAGE_TRANSITION = "' . htmlspecialchars($transition) . '";';
+        $header .= 'var QUIQQER_PAGE_TRANSITION = "'.htmlspecialchars($transition).'";';
         $header .= '</script>';
 
         $Template->extendHeader($header);
@@ -37,6 +43,13 @@ class EventHandler
      */
     public static function onRequestOutput(&$output)
     {
+        $Project    = QUI::getRewrite()->getProject();
+        $transition = $Project->getConfig('quiqqer.pagetransition.type');
+
+        if ($transition == 0) {
+            return;
+        }
+        
         $placer = '
             <noscript>
                 <style>
@@ -66,7 +79,7 @@ class EventHandler
 
         $output = preg_replace(
             '#<body([^>]*)>#i',
-            '<body$1>' . $placer,
+            '<body$1>'.$placer,
             $output
         );
     }

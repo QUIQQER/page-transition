@@ -32,6 +32,10 @@
                                     <locale group="quiqqer/page-transition"
                                             var="transition.no"/>
                                 </option>
+                                <option value="0">
+                                    <locale group="quiqqer/page-transition"
+                                            var="deactivate"/>
+                                </option>
                                 <option value="opacity">
                                     <locale group="quiqqer/page-transition"
                                             var="transition.opacity"/>

@@ -1,0 +1,24 @@
+<quiqqer>
+    <package>
+        <title>
+            <locale group="quiqqer/page-transition" var="package.title"/>
+        </title>
+
+        <description>
+            <locale group="quiqqer/page-transition" var="package.description"/>
+        </description>
+
+        <support>
+            <email><![CDATA[support@pcsg.de]]></email>
+            <forum><![CDATA[https://community.quiqqer.com]]></forum>
+            <source><![CDATA[https://dev.quiqqer.com/quiqqer/page-transition]]></source>
+            <issues><![CDATA[https://dev.quiqqer.com/quiqqer/page-transition/issues]]></issues>
+            <wiki><![CDATA[https://dev.quiqqer.com/quiqqer/page-transition/wikis/home]]></wiki>
+        </support>
+
+        <copyright>
+            <name><![CDATA[PCSG - Computer & Internet Service OHG]]></name>
+            <license><![CDATA[]]></license>
+        </copyright>
+    </package>
+</quiqqer>
