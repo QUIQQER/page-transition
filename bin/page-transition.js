@@ -47,6 +47,12 @@
             if (Target.href.toString().indexOf('mailto:') !== -1) {
                 window.Pace.restart();
                 window.Pace.stop();
+                return;
+            }
+
+            if (Target.get('target').toString().indexOf('_blank') !== -1) {
+                window.Pace.restart();
+                window.Pace.stop();
             }
         });
 
