@@ -1,16 +1,15 @@
 (function () {
+    'use strict';
     document.addEvent('domready', function () {
-        "use strict";
-
         function addEvent (Elm, event, func) {
-            if (typeof Elm.addEventListener != "undefined") {
+            if (typeof Elm.addEventListener !== "undefined") {
                 Elm.addEventListener(event, func, false);
-            } else if (typeof Elm.attachEvent != "undefined") {
+            } else if (typeof Elm.attachEvent !== "undefined") {
                 Elm.attachEvent("on" + event, func);
             }
         }
 
-        if (typeof Pace === 'undefined') {
+        if (typeof window.Pace === 'undefined') {
             document.addEvent('load', function () {
                 var Container = document.getElementsByClassName('quiqqer-page-transition');
 
@@ -41,8 +40,18 @@
             });
         });
 
+        // pace bug fix mailto link - quiqqer/page-transition#4
+        document.getElements('a').addEvent('click', function (event) {
+            var Target = event.target;
+
+            if (Target.href.toString().indexOf('mailto:') !== -1) {
+                window.Pace.restart();
+                window.Pace.stop();
+            }
+        });
+
         // show page
-        Pace.on('done', function () {
+        window.Pace.on('done', function () {
             var Container = document.getElementsByClassName('quiqqer-page-transition');
 
             if (!Container || !Container.length) {
@@ -84,4 +93,4 @@
             }, 1000);
         });
     });
-})(window);
+}());
