@@ -1,7 +1,7 @@
 {
   "name": "quiqqer/page-transition",
   "type": "quiqqer-module",
-  "description": "Effects for page changes.",
+  "description": "Select between several smooth transitions between your website‘s pages. Make your site unique.",
   "version": "dev-master",
   "authors": [
     {

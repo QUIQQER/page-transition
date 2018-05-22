@@ -1,28 +1,29 @@
+![QUIQQER Page Transition](bin/img/Readme.jpg)
 
 Page Transitions
 ========
 
-Effekt bei jedem Seitenwechsel
+Select between several smooth transitions between your website‘s pages. 
+Make your site unique.
 
-
-Paketname:
+Package name:
 
     quiqqer/page-transition
 
 
-Features (Funktionen)
+Features
 --------
 
-- Effekte beim Seitenwechsel
+- Effects at page change
 
 
 Installation
 ------------
 
-Der Paketname ist: quiqqer/page-transition
+The package name: quiqqer/page-transition
 
 
-Mitwirken
+Contribution
 ----------
 
 - Issue Tracker: https://dev.quiqqer.com/quiqqer/page-transition/issues
@@ -32,11 +33,11 @@ Mitwirken
 Support
 -------
 
-Falls Sie einen Fehler gefunden haben oder Verbesserungen wünschen,
-senden Sie bitte eine E-Mail an support@pcsg.de.
+If you have found an error or wish to make improvements, 
+please send an e-mail to support@pcsg.de.
 
 
-Lizenz
+Licence
 -------
 
 MIT
