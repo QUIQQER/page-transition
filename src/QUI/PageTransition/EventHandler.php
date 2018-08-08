@@ -23,7 +23,7 @@ class EventHandler
         $Project    = QUI::getRewrite()->getProject();
         $transition = $Project->getConfig('quiqqer.pagetransition.type');
 
-        if ($transition == 0) {
+        if (empty($transition) || $transition === "0") {
             return;
         }
 
@@ -46,10 +46,10 @@ class EventHandler
         $Project    = QUI::getRewrite()->getProject();
         $transition = $Project->getConfig('quiqqer.pagetransition.type');
 
-        if ($transition == 0) {
+        if (empty($transition) || $transition === "0") {
             return;
         }
-        
+
         $placer = '
             <noscript>
                 <style>
