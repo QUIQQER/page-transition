@@ -17,6 +17,7 @@
                         <text>
                             <locale group="quiqqer/page-transition" var="settings.title"/>
                         </text>
+                        <icon>fa fa-sticky-note</icon>
 
                         <settings title="quiqqer/page-transition" name="settings.pagetransition">
                             <title>
