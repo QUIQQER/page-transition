@@ -1,7 +1,8 @@
 (function () {
     'use strict';
-    document.addEvent('domready', function () {
-        function addEvent (Elm, event, func) {
+
+    var ready = function () {
+        function addEvent(Elm, event, func) {
             if (typeof Elm.addEventListener !== "undefined") {
                 Elm.addEventListener(event, func, false);
             } else if (typeof Elm.attachEvent !== "undefined") {
@@ -10,7 +11,7 @@
         }
 
         if (typeof window.Pace === 'undefined') {
-            document.addEvent('load', function () {
+            var loaded = function () {
                 var Container = document.getElementsByClassName('quiqqer-page-transition');
 
                 if (!Container || !Container.length) {
@@ -19,7 +20,14 @@
 
                 Container[0].style.zIndex  = -1;
                 Container[0].style.opacity = 0;
-            });
+            };
+
+            if (document.readyState === 'interactive') {
+                loaded();
+                return;
+            }
+
+            addEvent('load', loaded);
 
             return;
         }
@@ -98,5 +106,11 @@
                 Container.style.opacity = 0;
             }, 1000);
         });
-    });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener("DOMContentLoaded", ready);
+    } else {
+        ready();
+    }
 }());
