@@ -3,6 +3,7 @@
   "type": "quiqqer-module",
   "description": "Select between several smooth transitions between your website‘s pages. Make your site unique.",
   "version": "dev-master",
+  "license": "MIT",
   "authors": [
     {
       "name": "Henning Leutz",

@@ -7,6 +7,7 @@
                 <section name="quiqqer.pagetransition">
                     <conf name="type">
                         <type><![CDATA[string]]></type>
+                        <defaultvalue><![CDATA[0]]></defaultvalue>
                     </conf>
                 </section>
             </config>
@@ -29,13 +30,9 @@
                                     <locale group="quiqqer/page-transition"
                                             var="settings.pagetransition.type"/>
                                 </text>
-                                <option value="">
-                                    <locale group="quiqqer/page-transition"
-                                            var="transition.no"/>
-                                </option>
                                 <option value="0">
                                     <locale group="quiqqer/page-transition"
-                                            var="deactivate"/>
+                                            var="transition.no"/>
                                 </option>
                                 <option value="opacity">
                                     <locale group="quiqqer/page-transition"

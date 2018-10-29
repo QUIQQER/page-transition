@@ -8,6 +8,13 @@
             <locale group="quiqqer/page-transition" var="package.description"/>
         </description>
 
+        <image src="URL_OPT_DIR/quiqqer/page-transition/bin/img/Logo.jpg"/>
+
+        <preview>
+            <image src="URL_OPT_DIR/quiqqer/page-transition/bin/img/preview/1.gif"/>
+            <image src="URL_OPT_DIR/quiqqer/page-transition/bin/img/preview/2.gif"/>
+        </preview>
+
         <support>
             <email><![CDATA[support@pcsg.de]]></email>
             <forum><![CDATA[https://community.quiqqer.com]]></forum>
@@ -18,7 +25,7 @@
 
         <copyright>
             <name><![CDATA[PCSG - Computer & Internet Service OHG]]></name>
-            <license><![CDATA[]]></license>
+            <license><![CDATA[MIT]]></license>
         </copyright>
     </package>
 </quiqqer>
