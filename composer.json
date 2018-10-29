@@ -2,7 +2,7 @@
   "name": "quiqqer/page-transition",
   "type": "quiqqer-module",
   "description": "Select between several smooth transitions between your website‘s pages. Make your site unique.",
-  "version": "dev-master",
+  "version": "1.0.0",
   "license": "MIT",
   "authors": [
     {
