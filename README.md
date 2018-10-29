@@ -33,8 +33,9 @@ Contribution
 Support
 -------
 
-If you have found an error or wish to make improvements, 
-please send an e-mail to support@pcsg.de.
+If you found any flaws, have any wishes or suggestions you can send an email
+to [support@pcsg.de](mailto:support@pcsg.de) to inform us about your concerns. 
+We will try to respond to your request and forward it to the responsible developer.
 
 
 Licence
