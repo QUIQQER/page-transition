@@ -8,6 +8,8 @@
             <locale group="quiqqer/page-transition" var="package.description"/>
         </description>
 
+        <image src="URL_OPT_DIR/quiqqer/page-transition/bin/img/Logo.jpg"/>
+
         <preview>
             <image src="URL_OPT_DIR/quiqqer/page-transition/bin/img/preview/1.gif"/>
             <image src="URL_OPT_DIR/quiqqer/page-transition/bin/img/preview/2.gif"/>
