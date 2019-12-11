@@ -1,29 +1,28 @@
 {
-  "name": "quiqqer/page-transition",
-  "type": "quiqqer-module",
-  "description": "Select between several smooth transitions between your website‘s pages. Make your site unique.",
-  "version": "dev-dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Henning Leutz",
-      "email": "support@pcsg.de",
-      "homepage": "http://www.pcsg.de",
-      "role": "Developer"
+    "name": "quiqqer\/page-transition",
+    "type": "quiqqer-module",
+    "description": "Select between several smooth transitions between your website\u2018s pages. Make your site unique.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Henning Leutz",
+            "email": "support@pcsg.de",
+            "homepage": "http:\/\/www.pcsg.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@pcsg.de",
+        "url": "http:\/\/www.pcsg.de"
+    },
+    "require": {
+        "php": ">=5.3",
+        "quiqqer\/quiqqer": "*@dev",
+        "quiqqer\/pace": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "QUI\\PageTransition\\": "src\/QUI\/PageTransition"
+        }
     }
-  ],
-  "support": {
-    "email": "support@pcsg.de",
-    "url": "http://www.pcsg.de"
-  },
-  "require": {
-    "php": ">=5.3",
-    "quiqqer/quiqqer": "*@dev",
-    "quiqqer/pace": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "QUI\\PageTransition\\": "src\/QUI\/PageTransition"
-    }
-  }
 }
